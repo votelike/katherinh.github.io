@@ -1,0 +1,276 @@
+@font-face {
+  font-family: "Dela Gothic One";
+  src: url("./fonts/DelaGothicOne-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poiret One";
+  src: url("./fonts/PoiretOne-Regular.ttf");
+}
+
+
+
+img{
+  position: absolute;
+  height: 40vh;
+  /* width: 400px; */
+  display: block;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin-top: -8vh;
+
+
+
+
+}
+
+
+body{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #050801;
+    font-family: 'Raleway', sans-serif;
+    /* font-weight: bold; */
+}
+
+
+.main_section{
+  position: absolute;
+
+  height: 32vh;
+  width: 100%;
+  top: 0;
+  background-color: white;
+  z-index: 1;
+}
+
+
+.description{
+  position: absolute;
+  font-family: "Poiret One";
+  margin-bottom: 350px;
+  text-align: center;
+  color: white;
+  font-size: 2.2vh;
+
+}
+
+
+.my_name{
+    position: absolute;
+    margin-bottom: 600px;
+    font-family: "Dela Gothic One";
+    letter-spacing: 5px;
+    text-align: center;
+    color: white;
+    font-size: 2.5vh;
+}
+
+
+.money{
+  transform: scale(0.3);
+    position: absolute;
+    margin-left: 500px;
+    margin-top: 530px;
+}
+
+.money_1{
+  transform: scale(0.3);
+    position: absolute;
+    margin-left: 680px;
+    margin-top: 100px;
+    /* transform: rotate(65deg); */
+}
+
+.money_2{
+transform: scale(0.3);
+    position: absolute;
+    margin-left: 520px;
+    margin-top: 350px;
+    /* transform: rotate(-20deg); */
+}
+
+.money_3{
+transform: scale(0.3);
+    position: absolute;
+    margin-left: 540px;
+    margin-top: 290px;
+    /* transform: rotate(-20deg); */
+}
+.money_4{
+transform: scale(0.3);
+    position: absolute;
+    margin-left: 720px;
+    margin-top: 430px;
+    /* transform: rotate(-20deg); */
+}
+
+
+.money_5{
+transform: scale(0.3);
+    position: absolute;
+    margin-left: 400px;
+    /* transform: rotate(-20deg); */
+}
+
+
+.footer{
+  position: absolute;
+  text-align: center;
+  font-size: 2vh;
+  color: white;
+  font-family: "Poiret One";
+  margin-top: 300vh;
+  /* background-color: pink; */
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.footer_2{
+  position: absolute;
+  text-align: center;
+  font-size: 2vh;
+  color: white;
+  font-family: "Poiret One";
+  margin-top: 400vh;
+  /* background-color: pink; */
+}
+
+
+.footer_3{
+  position: absolute;
+  text-align: center;
+  font-size: 2vh;
+  color: white;
+  font-family: "Dela Gothic One";
+  margin-top: 460vh;
+  background-color: pink;
+  width: 100%;
+  /* background-color: pink; */
+}
+
+
+
+
+
+a{
+
+    white-space: nowrap;
+    filter: hue-rotate(150deg);
+    position: absolute;
+    font-family: "Dela Gothic One";
+    /* display: inline-block; */
+    padding: 25px 30px;
+    /* margin: 100px 0; */
+    color: #03e9f4;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    /* margin-right: auto;
+    margin-left: auto; */
+    font-size: 1.5vh;
+    min-width: 700px;
+    max-width: 700px;
+    text-align: center;
+
+      /* margin-top: 100px; */
+}
+a:hover{
+
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+     filter: hue-rotate(150deg);
+}
+a:nth-child(1){
+
+    filter: hue-rotate(110deg);
+
+}
+a:nth-child(2){
+    filter: hue-rotate(110deg);
+
+}
+a span{
+    position: absolute;
+    display: block;
+}
+a span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#03e9f4);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#03e9f4);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+a span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#03e9f4);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+
+
+a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#03e9f4);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
